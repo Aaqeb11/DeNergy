@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_withdrawAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Faucet.sol": "Faucet"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Faucet.sol": {
+			"keccak256": "0xd8f1e43931641bc8386f3cc68df459129392a5f5e271091dad279f27cdcfcc59",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://3d6535fa13f897b4a5c5d1c19b2aded79612632a54e296f9cbfdeef41d865dcc",
+				"dweb:/ipfs/QmWKK2bQdL4ZmoGjWUm1c6duRhDjm94UrUSkeiFhpqCvvc"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,82 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getEnergyData",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "production",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "consumption",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_production",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_consumption",
+						"type": "uint256"
+					}
+				],
+				"name": "setEnergyData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/2_MockOracle.sol": "MockOracle"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/2_MockOracle.sol": {
+			"keccak256": "0x0563e544157d0941c15eb2af037df358f2139b50cf17bd66b78f86e2012a3f17",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://71486e40c7e3ac01904547a504a6b6439e1c6371c817f02f13808c0c9850b866",
+				"dweb:/ipfs/QmcZMMhFsKLpqkr8QQdLknpZk9tsHAgegU5rD4Nos5xwn3"
+			]
+		}
+	},
+	"version": 1
+}
