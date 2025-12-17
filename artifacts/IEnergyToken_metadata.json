@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/EnergyMarketPlace.sol": "IEnergyToken"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/EnergyMarketPlace.sol": {
+			"keccak256": "0xad963cdb6c185b8b3043294280d771a42d4150d6d301dd02a3f856e64f01c94d",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://f823253b9c78e19ba27442844cf1382b47de424fdcd6c448b6a10608e4eeaf5c",
+				"dweb:/ipfs/QmTvCsh7XJdmpkU94QbxjJScSHXJHPtBZeMCp37ULoyDSu"
+			]
+		}
+	},
+	"version": 1
+}

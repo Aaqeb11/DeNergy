@@ -11,10 +11,53 @@
 						"internalType": "address",
 						"name": "oracleAddress",
 						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "energyTokenAddress",
+						"type": "address"
 					}
 				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "producer",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "excessKWh",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "tokensMinted",
+						"type": "uint256"
+					}
+				],
+				"name": "ExcessDetected",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "admin",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			},
 			{
 				"inputs": [],
@@ -32,6 +75,32 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "energyToken",
+				"outputs": [
+					{
+						"internalType": "contract IEnergyToken",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "producer",
+						"type": "address"
+					}
+				],
+				"name": "mintFromExcess",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -63,11 +132,11 @@
 	},
 	"sources": {
 		"contracts/1_Energy_Monitor.sol": {
-			"keccak256": "0x5d550159a24c032532b9118066def87f738c96aa7c407f3308aee30a4a8121a7",
+			"keccak256": "0x78bb84ebaa17c29b6a21b11f818aeb018df7304ed8d5d8f64339e92883a73ba0",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://60f2096d73a81778c830b7b22f45015b3b28dc029e214792730633e1e30ed9d1",
-				"dweb:/ipfs/QmcjTNKWvDkq42RzR4g6gsdUQ1TcHkLXyW52cAMCBCUszd"
+				"bzz-raw://935c7df9ff79e327636e99f9328baa768377f65583a2380684cd161be0f006a3",
+				"dweb:/ipfs/QmbAyRwo8Tp9B2LwNxpF1KCB2BMoLyv6hGUjmXrjfmvtvD"
 			]
 		}
 	},
