@@ -1,0 +1,106 @@
+{
+  "name": "EnergyMonitor",
+  "address": "0x316536f5ea0B709cD76ec72b38cfB12b54D898B7",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "oracleAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "energyTokenAddress",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "producer",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "excessKWh",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "tokensMinted",
+          "type": "uint256"
+        }
+      ],
+      "name": "ExcessDetected",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "producer",
+          "type": "address"
+        }
+      ],
+      "name": "mintFromExcess",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "admin",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "checkExcessEnergy",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "hasExcess",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "excessAmount",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "energyToken",
+      "outputs": [
+        {
+          "internalType": "contract IEnergyToken",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "filePath": "Energy-Marketplace/contracts/1_Energy_Monitor.sol",
+  "pinnedAt": 1765984356919
+}

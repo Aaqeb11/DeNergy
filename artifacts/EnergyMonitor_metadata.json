@@ -132,11 +132,11 @@
 	},
 	"sources": {
 		"contracts/1_Energy_Monitor.sol": {
-			"keccak256": "0x78bb84ebaa17c29b6a21b11f818aeb018df7304ed8d5d8f64339e92883a73ba0",
+			"keccak256": "0x7b62f988f46abf370c60c54334cc54fd7dfb3b5f85eee9effe1a638e795148ed",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://935c7df9ff79e327636e99f9328baa768377f65583a2380684cd161be0f006a3",
-				"dweb:/ipfs/QmbAyRwo8Tp9B2LwNxpF1KCB2BMoLyv6hGUjmXrjfmvtvD"
+				"bzz-raw://add2f133920543df1f8ec2fec5d8d74daaa373666b163bbdb5299871744a84f7",
+				"dweb:/ipfs/QmSvgc36CMVRrHMiggEE92DxAb8EkzG1QvK2nLNdSJwsLj"
 			]
 		}
 	},

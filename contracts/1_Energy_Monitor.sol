@@ -48,7 +48,7 @@ contract EnergyMonitor {
         (bool hasExcess, uint256 excessKWh) = checkExcessEnergy();
         require(hasExcess && excessKWh > 0, "No excess energy");
 
-        uint256 amount = excessKWh * 1e18;
+        uint256 amount = excessKWh;
 
         energyToken.mint(producer, amount);
 

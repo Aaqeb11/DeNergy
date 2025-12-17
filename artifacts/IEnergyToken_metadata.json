@@ -9,11 +9,6 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "from",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
 						"name": "to",
 						"type": "address"
 					},
@@ -23,14 +18,8 @@
 						"type": "uint256"
 					}
 				],
-				"name": "transferFrom",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
+				"name": "mint",
+				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
@@ -48,7 +37,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/EnergyMarketPlace.sol": "IEnergyToken"
+			"contracts/1_Energy_Monitor.sol": "IEnergyToken"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -62,12 +51,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/EnergyMarketPlace.sol": {
-			"keccak256": "0xad963cdb6c185b8b3043294280d771a42d4150d6d301dd02a3f856e64f01c94d",
+		"contracts/1_Energy_Monitor.sol": {
+			"keccak256": "0x7b62f988f46abf370c60c54334cc54fd7dfb3b5f85eee9effe1a638e795148ed",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://f823253b9c78e19ba27442844cf1382b47de424fdcd6c448b6a10608e4eeaf5c",
-				"dweb:/ipfs/QmTvCsh7XJdmpkU94QbxjJScSHXJHPtBZeMCp37ULoyDSu"
+				"bzz-raw://add2f133920543df1f8ec2fec5d8d74daaa373666b163bbdb5299871744a84f7",
+				"dweb:/ipfs/QmSvgc36CMVRrHMiggEE92DxAb8EkzG1QvK2nLNdSJwsLj"
 			]
 		}
 	},
