@@ -6,7 +6,18 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_oracle",
+						"type": "address"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
@@ -30,62 +41,24 @@
 						"internalType": "uint256",
 						"name": "consumption",
 						"type": "uint256"
-					}
-				],
-				"name": "EnergyDataUpdated",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "meter",
-						"type": "address"
-					}
-				],
-				"name": "MeterRegistered",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "meter",
-						"type": "address"
-					}
-				],
-				"name": "MeterRemoved",
-				"type": "event"
-			},
-			{
-				"inputs": [],
-				"name": "admin",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getEnergyData",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "production",
-						"type": "uint256"
 					},
 					{
+						"indexed": false,
 						"internalType": "uint256",
-						"name": "consumption",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"name": "ReadingPushed",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "lastConsumption",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
 						"type": "uint256"
 					}
 				],
@@ -93,48 +66,55 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "isMeter",
+				"inputs": [],
+				"name": "lastProduction",
 				"outputs": [
 					{
-						"internalType": "bool",
+						"internalType": "uint256",
 						"name": "",
-						"type": "bool"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "lastUpdatedAt",
+				"outputs": [
 					{
-						"internalType": "address",
-						"name": "_meter",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
-				"name": "registerMeter",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "oracle",
+				"outputs": [
 					{
-						"internalType": "address",
-						"name": "_meter",
+						"internalType": "contract IOracle",
+						"name": "",
 						"type": "address"
 					}
 				],
-				"name": "removeMeter",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -150,7 +130,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "setEnergyData",
+				"name": "pushReading",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -169,7 +149,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/2_MockOracle.sol": "MockOracle"
+			"contracts/SmartMeter.sol": "SmartMeter"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -183,12 +163,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/2_MockOracle.sol": {
-			"keccak256": "0xc95f14e8c5049b631d4434bf7c7176e39570b0f8edf975e9def68cb13d3cdbc3",
+		"contracts/SmartMeter.sol": {
+			"keccak256": "0xf3f373f92f9c0fb434e68bc2eecdccbca31b3c64903b25b70e4d21155fade8a5",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://d054ff8495e5872046ef95f0c2aa117e705f2e24e725bac1ae7a0b3d9c2f5a56",
-				"dweb:/ipfs/Qmb9A5hGuDnchBvSfiv1jgGjiv3Fn93xMNdSABsuZKVzoA"
+				"bzz-raw://fc83a2ebe9b2de13213e1838678203673145eb2141ab35c98f5c59e916bfd73f",
+				"dweb:/ipfs/QmSCo5gLuug68HdzrwuGiKNEHXRXCMokkQcujv8fTmJxYZ"
 			]
 		}
 	},

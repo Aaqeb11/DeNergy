@@ -6,21 +6,21 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "getEnergyData",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "production",
+						"name": "_production",
 						"type": "uint256"
 					},
 					{
 						"internalType": "uint256",
-						"name": "consumption",
+						"name": "_consumption",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"name": "setEnergyData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -37,7 +37,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/1_Energy_Monitor.sol": "IOracle"
+			"contracts/SmartMeter.sol": "IOracle"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -51,12 +51,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/1_Energy_Monitor.sol": {
-			"keccak256": "0x5d550159a24c032532b9118066def87f738c96aa7c407f3308aee30a4a8121a7",
+		"contracts/SmartMeter.sol": {
+			"keccak256": "0xf3f373f92f9c0fb434e68bc2eecdccbca31b3c64903b25b70e4d21155fade8a5",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://60f2096d73a81778c830b7b22f45015b3b28dc029e214792730633e1e30ed9d1",
-				"dweb:/ipfs/QmcjTNKWvDkq42RzR4g6gsdUQ1TcHkLXyW52cAMCBCUszd"
+				"bzz-raw://fc83a2ebe9b2de13213e1838678203673145eb2141ab35c98f5c59e916bfd73f",
+				"dweb:/ipfs/QmSCo5gLuug68HdzrwuGiKNEHXRXCMokkQcujv8fTmJxYZ"
 			]
 		}
 	},

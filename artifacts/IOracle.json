@@ -37,26 +37,26 @@
 		},
 		"gasEstimates": null,
 		"methodIdentifiers": {
-			"getEnergyData()": "11054e28"
+			"setEnergyData(uint256,uint256)": "e5f5a1fe"
 		}
 	},
 	"abi": [
 		{
-			"inputs": [],
-			"name": "getEnergyData",
-			"outputs": [
+			"inputs": [
 				{
 					"internalType": "uint256",
-					"name": "production",
+					"name": "_production",
 					"type": "uint256"
 				},
 				{
 					"internalType": "uint256",
-					"name": "consumption",
+					"name": "_consumption",
 					"type": "uint256"
 				}
 			],
-			"stateMutability": "view",
+			"name": "setEnergyData",
+			"outputs": [],
+			"stateMutability": "nonpayable",
 			"type": "function"
 		}
 	]
